@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+/* Navigation bar */
+.navbarContainter {
+  width: 60%;
+  margin: auto;
+}
+
+.nav-link {
+  font-size: 17px;
+  text-align: center;
+  color: #750511;
+}
+
+.nav-active {
+  border-bottom: 2px solid #750511;
+}
+
+
+/* landing page */
+.landing-dance p {
+  font-weight: 900;
+  font-size: 30px;
+  color: #750511;
+}
+
+.dance-landing h1 {
+  font-weight: 900;
+  font-size: 60px;
+  color: #750511;
+}
+
+.dance-landing p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.dance-landing h6 {
+  font-size: 18px;
+  color: #E8871E;
+}
+
+/*about page */
+.about-container h1 {
+  font-weight: 900;
+  font-size: 48px;
+  color: #750511;
+}
+
+.about-container p {
+  font-size: 24px;
+  color: #750511;
+}
+
+/*application page */
+.application-container h1 {
+  font-weight: 900;
+  font-size: 48px;
+  color: #750511;
+  margin-bottom:16px;
+}
+
+.application-container p {
+  font-size: 24px;
+  color: #750511;
+}
