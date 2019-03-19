@@ -26,19 +26,19 @@
 
 .dance-landing h1 {
   font-weight: 900;
-  font-size: 60px;
+  font-size: 48px;
   color: #750511;
 }
 
 .dance-landing p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #000000;
   margin-bottom: 12px;
 }
 
 .dance-landing h6 {
-  font-size: 18px;
+  font-size: 16px;
   color: #E8871E;
 }
 
@@ -57,12 +57,12 @@
 /*application page */
 .application-container h1 {
   font-weight: 900;
-  font-size: 48px;
+  font-size: 42px;
   color: #750511;
   margin-bottom:16px;
 }
 
 .application-container p {
-  font-size: 24px;
+  font-size: 18px;
   color: #750511;
 }
