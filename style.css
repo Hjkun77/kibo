@@ -21,6 +21,18 @@
   border-bottom: 2px solid #750511;
 }
 
+.dance-dropdown {
+ display: none;
+ margin-left: -35px;
+ padding: 0 30px;
+ z-index: 1;
+ position: absolute;
+ background: #a49c74;
+}
+
+nav ul li:hover > ul {
+  	display: block;
+}
 
 /* landing page */
 .landing-dance p {
@@ -151,7 +163,7 @@
 .dances-vid {
   width: 1196px;
   height: 638px;
-  margin-bottom: 64px; 
+  margin-bottom: 64px;
 }
 
 .emphasized {
@@ -295,6 +307,9 @@
 }
 
 /* Ba-Ingles page*/
+.written-title {
+  padding: 30px 0 60px 0;
+}
 .ba-ingles-intro-img img {
   width: 526px;
   height: 654px;
@@ -371,6 +386,22 @@
 .ba-ingles-12-img img {
   width: 617px;
   height: 448px;
+}
+
+#baIngles-1, #baIngles-2, #baIngles-3, #baIngles-4, #baIngles-5, #baIngles-6, #baIngles-7, #baIngles-8, #baIngles-9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#baIngles-2, #baIngles-3, #baIngles-4, #baIngles-5, #baIngles-6, #baIngles-7, #baIngles-8, #baIngles-9 {
+  display: none;
+}
+
+/* Image Slider */
+.arrow {
+  padding: 0 60px;
+  cursor: pointer;
 }
 
 /*application page */
