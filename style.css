@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
 
+.container {
+  width: 75%;
+  margin: auto;
+}
+
 /* Navigation bar */
 .navbarContainter {
   width: 60%;
@@ -41,6 +46,12 @@
   font-size: 16px;
   color: #E8871E;
 }
+
+.container-index {
+  width: 90%;
+  margin: auto;
+}
+
 
 /*about page */
 .about-container h1 {

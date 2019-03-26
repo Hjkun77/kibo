@@ -137,3 +137,8 @@ a:hover {
 .none {
   display: none;
 }
+
+
+.minHeight {
+  min-height: 100vh;
+}
