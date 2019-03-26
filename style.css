@@ -65,6 +65,314 @@
   color: #750511;
 }
 
+/* Dances page */
+.dances {
+  padding: 60px 0;
+}
+
+.dances-landing h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: normal;
+  color: #750511;
+  margin-bottom: 12px;
+}
+
+.dances-landing h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: normal;
+  color: #750511;
+  margin-bottom: 12px;
+}
+
+.dances-landing h3 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: normal;
+  color: #750511;
+  margin-bottom: 12px;
+}
+
+.dances-landing h4 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #750511;
+}
+
+.dances-landing h5 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  color: #E8871E;
+}
+
+.dances-landing h6 {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: normal;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.dances-landing p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.dances-landing ol li {
+  list-style-type: upper-alpha;
+  font-weight: bold;
+}
+
+.dances-landing li > *{
+  font-weight: normal;
+  padding-left: 32px;
+}
+
+.dances-bg {
+  background: #E1DABC;
+}
+
+.dances-vid {
+  width: 1196px;
+  height: 638px;
+  margin-bottom: 64px; 
+}
+
+.emphasized {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  color: #E8871E;
+}
+
+.dances-prev h2 {
+  color: #E1DABC !important;
+}
+
+.dances-prev h4 {
+  color: #E1DABC !important;
+}
+
+.dances-prev h5 {
+  color: #E1DABC !important;
+}
+
+.dances-prev p {
+  color: #E1DABC !important;
+}
+
+.dances-prev span {
+  color: #E1DABC !important;
+}
+
+.dances-prev li {
+  color: #E1DABC !important;
+}
+
+.dances-step-name {
+  padding-top: 40px;
+  margin-left: 416px;
+}
+
+.dances-step-role {
+  margin-left: 32px;
+}
+
+.dances-step-img {
+  padding-top: 24px;
+}
+
+.dances-step-desc {
+  padding-top: 40px;
+}
+
+.dances-step-desc-note {
+  color: #E8871E !important;
+}
+
+/* Polka page*/
+.polka-intro-img img {
+  width: 334px;
+  height: 575px;
+}
+
+.polka-formation-img img {
+  width: 531px;
+  height: 538px;
+}
+
+.polka-0-img img {
+  width: 182px;
+  height: 314px;
+}
+
+.polka-1-img img {
+  width: 308px;
+  height: 436px;
+}
+
+.polka-2-img img {
+  width: 185px;
+  height: 277px;
+}
+
+.polka-3-img {
+  width: 122px;
+  height: 327px;
+  }
+
+.polka-4-img {
+  width: 115px;
+  height: 309px;
+}
+
+.polka-5-img img {
+  width: 308px;
+  height: 408px;
+}
+
+.polka-6-img img {
+  width: 182px;
+  height: 314px;
+}
+
+.polka-7-img img {
+  width: 308px;
+  height: 436px;
+}
+
+.polka-8-img img {
+  width: 407px;
+  height: 450px;
+}
+
+.polka-9-img img {
+  width: 315px;
+  height: 327px;
+}
+
+.polka-10-img img {
+  width: 368px;
+  height: 372px;
+}
+
+.polka-11-img img {
+  width: 271px;
+  height: 354px;
+}
+
+.polka-12-img img {
+  width: 315px;
+  height: 327px;
+}
+
+.polka-13-img img {
+  width: 250px;
+  height: 330px;
+}
+
+.polka-14-img img {
+  width: 384px;
+  height: 279px;
+}
+
+/* Ba-Ingles page*/
+.ba-ingles-intro-img img {
+  width: 526px;
+  height: 654px;
+}
+
+.ba-ingles-formation-img img {
+  width: 531px;
+  height: 538px;
+}
+
+.ba-ingles-0-img img {
+  width: 230px;
+  height: 303px;
+}
+
+.ba-ingles-1-img img {
+  width: 284px;
+  height: 291px;
+}
+
+.ba-ingles-2-img img {
+  width: 163px;
+  height: 270px;
+}
+
+.ba-ingles-3-img img {
+  width: 315px;
+  height: 327px;
+}
+
+.ba-ingles-4-img img {
+  width: 441px;
+  height: 419px;
+}
+
+
+.ba-ingles-5-img img {
+  width: 284px;
+  height: 291px;
+}
+
+.ba-ingles-6-img img {
+  width: 206px;
+  height: 323px;
+}
+
+.ba-ingles-7-img img {
+  width: 213px;
+  height: 381px;
+}
+
+.ba-ingles-8-img img {
+  width: 206px;
+  height: 323px;
+}
+
+.ba-ingles-9-img img {
+  width: 282px;
+  height: 351px;
+}
+
+.ba-ingles-10-img img {
+  width: 86px;
+  height: 321px;
+  padding-right: 60px;
+}
+
+.ba-ingles-11-img img {
+  width: 92px;
+  height: 327px;
+  padding-left: 60px;
+}
+
+.ba-ingles-12-img img {
+  width: 617px;
+  height: 448px;
+}
+
 /*application page */
 .application-container h1 {
   font-weight: 900;
