@@ -8,6 +8,52 @@ const BaIngles7 = document.querySelector('#baIngles-7')
 const BaIngles8 = document.querySelector('#baIngles-8')
 const BaIngles9 = document.querySelector('#baIngles-9')
 
+const Polka1 = document.querySelector('#polka1')
+const Polka2 = document.querySelector('#polka2')
+const Polka3 = document.querySelector('#polka3')
+const Polka4 = document.querySelector('#polka4')
+const Polka5 = document.querySelector('#polka5')
+
+function polka1() {
+  Polka1.style.display = "flex"
+  Polka2.style.display = "none"
+  Polka3.style.display = "none"
+  Polka4.style.display = "none"
+  Polka5.style.display = "none"
+}
+
+function polka2() {
+  Polka1.style.display = "none"
+  Polka2.style.display = "flex"
+  Polka3.style.display = "none"
+  Polka4.style.display = "none"
+  Polka5.style.display = "none"
+}
+
+function polka3() {
+  Polka1.style.display = "none"
+  Polka2.style.display = "none"
+  Polka3.style.display = "flex"
+  Polka4.style.display = "none"
+  Polka5.style.display = "none"
+}
+
+function polka4() {
+  Polka1.style.display = "none"
+  Polka2.style.display = "none"
+  Polka3.style.display = "none"
+  Polka4.style.display = "flex"
+  Polka5.style.display = "none"
+}
+
+function polka5() {
+  Polka1.style.display = "none"
+  Polka2.style.display = "none"
+  Polka3.style.display = "none"
+  Polka4.style.display = "none"
+  Polka5.style.display = "flex"
+}
+
 function baIngles1() {
   BaIngles1.style.display = 'flex'
   BaIngles2.style.display = 'none'

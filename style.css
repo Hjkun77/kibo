@@ -389,13 +389,13 @@ nav ul li:hover > ul {
   height: 448px;
 }
 
-#baIngles-1, #baIngles-2, #baIngles-3, #baIngles-4, #baIngles-5, #baIngles-6, #baIngles-7, #baIngles-8, #baIngles-9 {
+#baIngles-1, #baIngles-2, #baIngles-3, #baIngles-4, #baIngles-5, #baIngles-6, #baIngles-7, #baIngles-8, #baIngles-9, #polka1, #polka2, #polka3, #polka4, #polka5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#baIngles-2, #baIngles-3, #baIngles-4, #baIngles-5, #baIngles-6, #baIngles-7, #baIngles-8, #baIngles-9 {
+#baIngles-2, #baIngles-3, #baIngles-4, #baIngles-5, #baIngles-6, #baIngles-7, #baIngles-8, #baIngles-9, #polka2, #polka3, #polka4, #polka5 {
   display: none;
 }
 
