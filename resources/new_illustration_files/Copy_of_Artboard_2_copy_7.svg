@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+  <title>Artboard 2 copy 7</title>
+  <g id="Midtones">
+    <path d="M12.82,13.11V689.57h675l4.5-676.47S6.07,6.36,12.82,13.11Z" fill="#f7982d"/>
+  </g>
+  <g id="Main">
+    <g>
+      <circle cx="81.69" cy="142.87" r="29.36" fill="#750511"/>
+      <circle cx="140.42" cy="86.59" r="29.36" fill="#750511"/>
+      <circle cx="561.52" cy="622.7" r="29.36" fill="#750511"/>
+      <circle cx="620.25" cy="566.42" r="29.36" fill="#750511"/>
+      <circle cx="80.14" cy="565.19" r="29.36" fill="#750511"/>
+      <circle cx="136.42" cy="623.92" r="29.36" fill="#750511"/>
+      <circle cx="565.61" cy="79.72" r="29.36" fill="#750511"/>
+      <circle cx="621.89" cy="138.45" r="29.36" fill="#750511"/>
+      <rect x="10.73" y="10.73" width="678.54" height="678.54" fill="none" stroke="#750511" stroke-miterlimit="10" stroke-width="5"/>
+    </g>
+  </g>
+</svg>
