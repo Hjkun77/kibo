@@ -62,21 +62,29 @@
 
   <section class="dances">
     <div class="container">
-      <div class="row">
+      <div class="row no-gutters">
         <div class="col-md-6 dances-landing flex alignCenter">
           <div>
-            <h2>Formation</h2>
-            <p><b>Partners</b> stand opposite each other about six feet apart. When facing audience, Girl stands at partner’s right. One to any number of couples may take part in this dance..</p>
-            <h6>Dance can be learned alone or with a partner</h6>
-            <h2>Music & Count</h2>
-            <p>Count is <b>'one, two'</b> or <b>‘one, and two’</b> to a measure. ‘Ba-Ingles’ has set music to be used for the dance.</p>
-            <h6>Note: the number of measures are signified in the written tutorial for each figure.</h6>
-            <h2>Costume</h2>
-            <p><b>Dancers</b> are dressed in peasant costume</p>
+            <div class="formation">
+              <h2>Formation</h2>
+              <p><b>Partners</b> stand opposite each other about six feet apart. When facing audience, Girl stands at partner’s right. One to any number of couples may take part in this dance..</p>
+              <h6>Dance can be learned alone or with a partner</h6>
+            </div>
+            <div class="music">
+              <h2>Music & Count</h2>
+              <p>Count is <b>'one, two'</b> or <b>‘one, and two’</b> to a measure. ‘Ba-Ingles’ has set music to be used for the dance.</p>
+              <h6>Note: the number of measures are signified in the written tutorial for each figure.</h6>
+            </div>
+            <div class="costume">
+              <h2>Costume</h2>
+              <p><b>Dancers</b> are dressed in peasant costume</p>
+            </div>
           </div>
         </div>
         <div class="col-md-6 flex justifyCenter ba-ingles-formation-img dances-bg">
-          <img src="./resources/ba-ingles/ba-ingles-formation.png" alt="Ba-Ingles Formation">
+          <img id="baingles-formation" src="./resources/ba-ingles/baingles-formation.svg" alt="Ba Ingles Formation" style="width: 80%; display: none">
+          <iframe src="https://open.spotify.com/embed/track/5plSEfV5CzW2GesD3wJUUT" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" id="baingles-spotify" style="height: 10%; margin: auto; display: none"></iframe>
+          <img id="baingles-costume" src="./resources/ba-ingles/baingles-costume.svg" alt="BaIngles Costume" style="width: 80%; display: none">
         </div>
       </div>
     </div>
@@ -1010,22 +1018,33 @@
   <script>
   $(function() {
     $('.formation').hover(function() {
-      $("#polka-formation").css("display", "block");
+      $("#baingles-formation").css("display", "block");
       $(".dances-bg").css("background", "#E1DABC");
     }, function() {
       // on mouseout, reset the background colour
-      $('#polka-formation').css('display', 'none');
+      $('#baingles-formation').css('display', 'none');
+      $(".dances-bg").css("background", "none");
+    });
+  });
+
+  $(function() {
+    $('.music').hover(function() {
+      $("#baingles-spotify").css("display", "block");
+      $(".dances-bg").css("background", "#E1DABC");
+    }, function() {
+      // on mouseout, reset the background colour
+      $('#baingles-spotify').css('display', 'none');
       $(".dances-bg").css("background", "none");
     });
   });
 
   $(function() {
     $('.costume').hover(function() {
-      $("#polka-costume").css("display", "block");
+      $("#baingles-costume").css("display", "block");
       $(".dances-bg").css("background", "#E1DABC");
     }, function() {
       // on mouseout, reset the background colour
-      $('#polka-costume').css('display', 'none');
+      $('#baingles-costume').css('display', 'none');
       $(".dances-bg").css("background", "none");
     });
   });
