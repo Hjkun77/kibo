@@ -107,6 +107,9 @@ nav ul li:hover > ul {
   background-size: contain; */
 }
 
+.dances-bg {
+  background: #FFFBE9;
+}
 .container-bg .content {
   position: absolute; /* Position the background text */
   top: 50%;
@@ -263,9 +266,6 @@ nav ul li:hover > ul {
   padding-left: 32px;
 }
 
-.dances-bg {
-  background: #E1DABC;
-}
 
 .dances-vid {
   height: 638px;
@@ -390,4 +390,13 @@ nav ul li:hover > ul {
 .application-container p {
   font-size: 18px;
   color: #750511;
+}
+
+
+/*Hover effects*/
+.formation, .music, .costume {
+  padding: 15px 60px 15px 30px;
+}
+.formation:hover, .music:hover, .costume:hover  {
+  background: #E1DABC;
 }

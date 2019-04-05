@@ -59,22 +59,31 @@
 
   <section class="dances">
     <div class="container">
-      <div class="row">
+      <div class="row no-gutters">
         <div class="col-md-6 dances-landing flex alignCenter">
           <div>
-            <h2>Formation</h2>
-            <p>When performed for demonstration, dancers may be grouped into sets of four pairs in square formation, each <b>couple</b> occupying a corner, or a side of an imaginary square or they may be arranged in longways formation. When performed as a ballroom dance, partners may face in any direction and are scattered about the room.</p>
-            <h6>Dance can be learned alone or with a partner</h6>
-            <h2>Music & Count</h2>
-            <p>Count is <b>'one and two and'</b> to a measure. ‘Polka sa Nayon’ has set music to be used for the dance.</p>
-            <h6>Note: the number of measures are signified in the written tutorial for each figure.</h6>
-            <h2>Costume</h2>
-            <p><b>Women:</b> Maria Clara or Balintawak style
-              <br><b>Men:</b> Barong tagalog and black/white trousers</p>
+            <div class="formation">
+              <h2>Formation</h2>
+              <p>When performed for demonstration, dancers may be grouped into sets of four pairs in square formation, each <b>couple</b> occupying a corner, or a side of an imaginary square or they may be arranged in longways formation. When performed as a ballroom dance, partners may face in any direction and are scattered about the room.</p>
+              <h6>Dance can be learned alone or with a partner</h6>
+            </div>
+            <div class="music">
+              <h2>Music & Count</h2>
+              <p>Count is <b>'one and two and'</b> to a measure. ‘Polka sa Nayon’ has set music to be used for the dance.</p>
+              <h6>Note: the number of measures are signified in the written tutorial for each figure.</h6>
+            </div>
+            <div class="costume">
+              <h2>Costume</h2>
+              <p><b>Women:</b> Maria Clara or Balintawak style
+                <br><b>Men:</b> Barong tagalog and black/white trousers</p>
+            </div>
+
           </div>
         </div>
-        <div class="col-md-6 flex justifyCenter polka-formation-img dances-bg">
-          <img src="./resources/polka/polka-formation.png" alt="Polka sa Nayon Formation">
+        <div class="col-md-6 flex justifyCenter dances-bg">
+          <img id="polka-formation" src="./resources/polka/polka-formation.svg" alt="Polka sa Nayon Formation" style="width: 80%; display: none">
+          <iframe src="https://open.spotify.com/embed/track/5zF422TDHXsTx90ahBY8uD" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" id="polka-spotify" style="height: 10%; margin: auto; display: none"></iframe>
+          <img id="polka-costume" src="./resources/polka/polka-costume.svg" alt="Polka Costume" style="width: 80%; display: none">
         </div>
       </div>
     </div>
@@ -545,5 +554,40 @@
   </section>
 
   <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script>
+  $(function() {
+    $('.formation').hover(function() {
+      $("#polka-formation").css("display", "block");
+      $(".dances-bg").css("background", "#E1DABC");
+    }, function() {
+      // on mouseout, reset the background colour
+      $('#polka-formation').css('display', 'none');
+      $(".dances-bg").css("background", "none");
+    });
+  });
+
+  $(function() {
+    $('.music').hover(function() {
+      $("#polka-spotify").css("display", "block");
+      $(".dances-bg").css("background", "#E1DABC");
+    }, function() {
+      // on mouseout, reset the background colour
+      $('#polka-spotify').css('display', 'none');
+      $(".dances-bg").css("background", "none");
+    });
+  });
+
+  $(function() {
+    $('.costume').hover(function() {
+      $("#polka-costume").css("display", "block");
+      $(".dances-bg").css("background", "#E1DABC");
+    }, function() {
+      // on mouseout, reset the background colour
+      $('#polka-costume').css('display', 'none');
+      $(".dances-bg").css("background", "none");
+    });
+  });
+  </script>
 </body>
 </html>
