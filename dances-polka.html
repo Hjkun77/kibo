@@ -82,7 +82,7 @@
         </div>
         <div class="col-md-6 flex justifyCenter dances-bg">
           <img id="polka-formation" src="./resources/polka/polka-formation.svg" alt="Polka sa Nayon Formation" style="width: 80%; display: none">
-          <iframe src="https://open.spotify.com/embed/track/5zF422TDHXsTx90ahBY8uD" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" id="polka-spotify" style="height: 10%; margin: auto; display: none"></iframe>
+          <iframe src="https://open.spotify.com/embed/track/5zF422TDHXsTx90ahBY8uD" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" id="polka-spotify" style="height: 12%; margin: auto; display: none"></iframe>
           <img id="polka-costume" src="./resources/polka/polka-costume.svg" alt="Polka Costume" style="width: 80%; display: none">
         </div>
       </div>
@@ -560,6 +560,10 @@
     $('.formation').hover(function() {
       $("#polka-formation").css("display", "block");
       $(".dances-bg").css("background", "#E1DABC");
+
+      $('#polka-spotify').css('display', 'none');
+      $(".music").css("background", "none");
+      $("#polka-costume").css("display", "none");
     }, function() {
       // on mouseout, reset the background colour
       $('#polka-formation').css('display', 'none');
@@ -571,10 +575,15 @@
     $('.music').hover(function() {
       $("#polka-spotify").css("display", "block");
       $(".dances-bg").css("background", "#E1DABC");
+      $(".music").css("background", "#E1DABC");
+
+      $('#polka-formation').css('display', 'none');
+      $("#polka-costume").css("display", "none");
     }, function() {
       // on mouseout, reset the background colour
-      $('#polka-spotify').css('display', 'none');
-      $(".dances-bg").css("background", "none");
+      // $('#polka-spotify').css('display', 'none');
+      // $(".dances-bg").css("background", "none");
+      $(".music").css("background", "#E1DABC");
     });
   });
 
@@ -582,6 +591,10 @@
     $('.costume').hover(function() {
       $("#polka-costume").css("display", "block");
       $(".dances-bg").css("background", "#E1DABC");
+
+      $('#polka-spotify').css('display', 'none');
+      $(".music").css("background", "none");
+      $("#polka-formation").css("display", "none");
     }, function() {
       // on mouseout, reset the background colour
       $('#polka-costume').css('display', 'none');

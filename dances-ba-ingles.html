@@ -83,7 +83,7 @@
         </div>
         <div class="col-md-6 flex justifyCenter ba-ingles-formation-img dances-bg">
           <img id="baingles-formation" src="./resources/ba-ingles/baingles-formation.svg" alt="Ba Ingles Formation" style="width: 80%; display: none">
-          <iframe src="https://open.spotify.com/embed/track/5plSEfV5CzW2GesD3wJUUT" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" id="baingles-spotify" style="height: 10%; margin: auto; display: none"></iframe>
+          <iframe src="https://open.spotify.com/embed/track/5plSEfV5CzW2GesD3wJUUT" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" id="baingles-spotify" style="height: 12%; margin: auto; display: none"></iframe>
           <img id="baingles-costume" src="./resources/ba-ingles/baingles-costume.svg" alt="BaIngles Costume" style="width: 80%; display: none">
         </div>
       </div>
@@ -1020,6 +1020,10 @@
     $('.formation').hover(function() {
       $("#baingles-formation").css("display", "block");
       $(".dances-bg").css("background", "#E1DABC");
+
+      $('#baingles-spotify').css('display', 'none');
+      $(".music").css("background", "none");
+      $("#baingles-costume").css("display", "none");
     }, function() {
       // on mouseout, reset the background colour
       $('#baingles-formation').css('display', 'none');
@@ -1031,10 +1035,15 @@
     $('.music').hover(function() {
       $("#baingles-spotify").css("display", "block");
       $(".dances-bg").css("background", "#E1DABC");
+      $(".music").css("background", "#E1DABC");
+
+      $('#baingles-formation').css('display', 'none');
+      $("#baingles-costume").css("display", "none");
     }, function() {
       // on mouseout, reset the background colour
-      $('#baingles-spotify').css('display', 'none');
-      $(".dances-bg").css("background", "none");
+      // $('#baingles-spotify').css('display', 'none');
+      // $(".dances-bg").css("background", "none");
+      $(".music").css("background", "#E1DABC");
     });
   });
 
@@ -1042,6 +1051,10 @@
     $('.costume').hover(function() {
       $("#baingles-costume").css("display", "block");
       $(".dances-bg").css("background", "#E1DABC");
+
+      $('#baingles-spotify').css('display', 'none');
+      $(".music").css("background", "none");
+      $("#baingles-formation").css("display", "none");
     }, function() {
       // on mouseout, reset the background colour
       $('#baingles-costume').css('display', 'none');
