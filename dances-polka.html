@@ -179,7 +179,7 @@
             <div class="col-md-4">
               <figure>
                 <div class="flex justifyCenter">
-                  <img src="./resources/polka/Polka-Step-GIF.png" alt="(A) Polka Step" style="height: 350px !important; margin-top: -60px; margin-bottom: -40px;">
+                  <img src="./resources/polka/Polka-Step.gif" alt="(A) Polka Step" style="height: 290px !important; margin-bottom: -40px;">
                 </div>
                 <figcaption class="dances-step-desc">
                   <div class="emphasized">(A) Polka Step</div>
@@ -189,7 +189,7 @@
             <div class="col-md-4">
               <figure>
                 <div class="flex justifyCenter">
-                  <img src="./resources/polka/Polka-Point-Step.png" alt="(B) Point Sideward">
+                  <img src="./resources/polka/Gallop-Step.gif" alt="(B) Point Sideward">
                 </div>
                 <figcaption class="dances-step-desc">
                   <div class="emphasized">(B) Point Sideward</div>
@@ -267,7 +267,7 @@
             <div class="col-md-4">
               <figure>
                 <div class="flex justifyCenter">
-                  <img src="./resources/polka/Heel-&-Toe-Polka.png" alt="(A) Heel and Toe" style="height: 290px !important;margin-bottom: -40px;">
+                  <img src="./resources/polka/Heel-Toe.gif" alt="(A) Heel and Toe" style="height: 290px !important;margin-bottom: -40px;">
                 </div>
                 <figcaption class="dances-step-desc">
                   <div class="emphasized">(A) Heel and Toe</div>
@@ -277,7 +277,7 @@
             <div class="col-md-4">
               <figure>
                 <div class="flex justifyCenter">
-                  <img src="./resources/polka/Polka-Step-GIF.png" alt="(A) Polka Step" style="height: 350px !important; margin-top: -60px; margin-bottom: -40px;">
+                  <img src="./resources/polka/Polka-Step.gif" alt="(A) Polka Step" style="height: 290px !important; margin-bottom: -40px;">
                 </div>
                 <figcaption class="dances-step-desc">
                   <div class="emphasized">(A) Polka Step</div>
@@ -356,7 +356,7 @@
             <div class="col-md-4">
               <figure>
                 <div class="flex justifyCenter">
-                  <img src="./resources/polka/Polka-Step-GIF.png" alt="(A) Polka Step" style="height: 350px !important; margin-top: -60px; margin-bottom: -40px;">
+                  <img src="./resources/polka/Polka-Step.gif" alt="(A) Polka Step" style="height: 290px !important; margin-bottom: -40px;">
                 </div>
                 <figcaption class="dances-step-desc">
                   <div class="emphasized">(A) Polka Step</div>
@@ -366,7 +366,7 @@
             <div class="col-md-4">
               <figure>
                 <div class="flex justifyCenter">
-                  <img src="./resources/polka/Polka-Point-Step.png" alt="(B) Point Sideward">
+                  <img src="./resources/polka/Gallop-Step.gif" alt="(B) Point Sideward">
                 </div>
                 <figcaption class="dances-step-desc">
                   <div class="emphasized">(B) Point Sideward</div>
@@ -442,7 +442,7 @@
             <div class="col-md-4">
               <figure>
                 <div class="flex justifyCenter">
-                  <img src="./resources/polka/Step-Sequence.png" alt="(B) Entire Step Sequence" style="height: 290px !important;margin-bottom: -40px;">
+                  <img src="./resources/polka/Step-Sequence.gif" alt="(B) Entire Step Sequence" style="height: 290px !important;margin-bottom: -40px;">
                 </div>
                 <figcaption class="dances-step-desc">
                   <div class="emphasized">(B) Entire Step Sequence</div>
@@ -556,18 +556,25 @@
   <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
   <script>
+  $(document).ready(function() {
+    $("#polka-formation").css("display", "block");
+    $(".dances-bg").css("background", "#E1DABC");
+    $(".formation").css("background", "#E1DABC");
+    $('#polka-spotify').css('display', 'none');
+    $(".music").css("background", "none");
+    $("#polka-costume").css("display", "none");
+  });
+
+
   $(function() {
     $('.formation').hover(function() {
       $("#polka-formation").css("display", "block");
       $(".dances-bg").css("background", "#E1DABC");
+      $(".formation").css("background", "#E1DABC");
 
       $('#polka-spotify').css('display', 'none');
       $(".music").css("background", "none");
       $("#polka-costume").css("display", "none");
-    }, function() {
-      // on mouseout, reset the background colour
-      $('#polka-formation').css('display', 'none');
-      $(".dances-bg").css("background", "none");
     });
   });
 
@@ -579,11 +586,9 @@
 
       $('#polka-formation').css('display', 'none');
       $("#polka-costume").css("display", "none");
-    }, function() {
-      // on mouseout, reset the background colour
-      // $('#polka-spotify').css('display', 'none');
-      // $(".dances-bg").css("background", "none");
-      $(".music").css("background", "#E1DABC");
+
+      $(".formation").css("background", "none");
+      $(".costume").css("background", "none");
     });
   });
 
@@ -591,14 +596,13 @@
     $('.costume').hover(function() {
       $("#polka-costume").css("display", "block");
       $(".dances-bg").css("background", "#E1DABC");
+      $(".costume").css("background", "#E1DABC");
 
       $('#polka-spotify').css('display', 'none');
-      $(".music").css("background", "none");
       $("#polka-formation").css("display", "none");
-    }, function() {
-      // on mouseout, reset the background colour
-      $('#polka-costume').css('display', 'none');
-      $(".dances-bg").css("background", "none");
+
+      $(".formation").css("background", "none");
+      $(".music").css("background", "none");
     });
   });
   </script>

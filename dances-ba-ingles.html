@@ -182,7 +182,7 @@
             <div class="col-md-4">
               <figure>
                 <div class="flex justifyCenter">
-                  <img src="./resources/ba-ingles/change-step.png" alt="(A) change-step">
+                  <img src="./resources/ba-ingles/Change-Step.gif" alt="(A) change-step">
                 </div>
                 <figcaption class="dances-step-desc">
                   <div class="emphasized">(A) change-step</div>
@@ -382,7 +382,7 @@
             <div class="col-md-4">
               <figure>
                 <div class="flex justifyCenter">
-                  <img src="./resources/ba-ingles/change-step.png" alt="(A) Change Step">
+                  <img src="./resources/ba-ingles/Change-Step.gif" alt="(A) Change Step">
                 </div>
                 <figcaption class="dances-step-desc">
                   <div class="emphasized">(A) Change Step</div>
@@ -799,7 +799,7 @@
             <div class="col-md-4">
               <figure>
                 <div class="flex justifyCenter">
-                  <img src="./resources/ba-ingles/change-step.png" alt="(A) Change Step">
+                  <img src="./resources/ba-ingles/Change-Step.gif" alt="(A) Change Step">
                 </div>
                 <figcaption class="dances-step-desc">
                   <div class="emphasized">(A) Change Step</div>
@@ -1016,18 +1016,25 @@
   <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
   <script>
+  $(document).ready(function() {
+    $("#baingles-formation").css("display", "block");
+    $(".dances-bg").css("background", "#E1DABC");
+    $(".formation").css("background", "#E1DABC");
+    $('#baingles-spotify').css('display', 'none');
+    $(".music").css("background", "none");
+    $("#baingles-costume").css("display", "none");
+  });
+
+
   $(function() {
     $('.formation').hover(function() {
       $("#baingles-formation").css("display", "block");
       $(".dances-bg").css("background", "#E1DABC");
+      $(".formation").css("background", "#E1DABC");
 
       $('#baingles-spotify').css('display', 'none');
       $(".music").css("background", "none");
       $("#baingles-costume").css("display", "none");
-    }, function() {
-      // on mouseout, reset the background colour
-      $('#baingles-formation').css('display', 'none');
-      $(".dances-bg").css("background", "none");
     });
   });
 
@@ -1039,11 +1046,9 @@
 
       $('#baingles-formation').css('display', 'none');
       $("#baingles-costume").css("display", "none");
-    }, function() {
-      // on mouseout, reset the background colour
-      // $('#baingles-spotify').css('display', 'none');
-      // $(".dances-bg").css("background", "none");
-      $(".music").css("background", "#E1DABC");
+
+      $(".formation").css("background", "none");
+      $(".costume").css("background", "none");
     });
   });
 
@@ -1051,14 +1056,13 @@
     $('.costume').hover(function() {
       $("#baingles-costume").css("display", "block");
       $(".dances-bg").css("background", "#E1DABC");
+      $(".costume").css("background", "#E1DABC");
 
       $('#baingles-spotify').css('display', 'none');
-      $(".music").css("background", "none");
       $("#baingles-formation").css("display", "none");
-    }, function() {
-      // on mouseout, reset the background colour
-      $('#baingles-costume').css('display', 'none');
-      $(".dances-bg").css("background", "none");
+
+      $(".formation").css("background", "none");
+      $(".music").css("background", "none");
     });
   });
   </script>
