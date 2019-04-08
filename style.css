@@ -39,7 +39,7 @@ nav ul li:hover > ul {
 /* landing page */
 .landing-dance p {
   font-weight: 900;
-  font-size: 30px;
+  font-size: 28px;
   color: #750511;
 }
 
@@ -157,6 +157,10 @@ nav ul li:hover > ul {
   padding-right: 48px;
 }
 
+.about-container {
+
+}
+
 .about-container h1 {
   font-weight: 900;
   font-size: 48px;
@@ -164,7 +168,6 @@ nav ul li:hover > ul {
 }
 
 .about-container h3 {
-  padding-top: 80px;
   padding-bottom: 16px;
   text-align: center;
   vertical-align: middle;
@@ -399,4 +402,13 @@ nav ul li:hover > ul {
 }
 .formation:hover, .music:hover, .costume:hover  {
   background: #E1DABC;
+}
+
+
+.line {
+  width: 100%;
+  height: 5px;
+  background: #750511;
+  margin-top: -90px;
+  margin-bottom: 60px;
 }
