@@ -44,23 +44,26 @@
     <div class="container">
       <div class="row flex justifyCenter">
         <div class="col-md-6">
-          <img src="./resources/home/kibo.svg" alt="landing-dance">
-          <strong>verb</strong>
-          <br>
-          <strong>1. to move, to talk, to stir</strong>
-          <p style="margin-top: 16px">Kibo is an online platform that strives to keep Philippine culture alive through basic information, videos, illustrations, and step-by-step guides of its dances.</p>
+          <img src="./resources/home/kibo.svg" alt="landing-dance" class="animated fadeInUp" style="height: 480px">
+          <div class="animated fadeIn">
+            <strong>verb</strong>
+            <br>
+            <strong>1. to move, to talk, to stir</strong>
+            <p style="margin-top: 16px">Kibo is an online platform that strives to keep Philippine culture alive through basic information, videos, illustrations, and step-by-step guides of its dances.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
   <section id="landing" class="my-3">
     <div class="container-index minHeight">
       <div class="row">
         <div class="col-md-6">
-          <img src="./resources/home/dances.svg" alt="landing-dance">
+          <img src="./resources/home/dances.svg" alt="landing-dance" class=" animated slideInLeft">
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-5 landing-dance flex alignCenter">
+        <div class="col-md-5 landing-dance flex alignCenter animated slideInRight">
           <p>Dance is an important aspect of every civilization, a cultural treasure that embodies the experiences of a community and the stories they lived out.</p>
         </div>
       </div>
@@ -70,16 +73,21 @@
   <section id="dances" class="my-3">
     <div class="container minHeight flex spaceBetween">
       <div class="col-md-5 mr-5 dance-landing">
-        <img src="./resources/home/ba-ingles.svg" alt="ba-ingles">
-        <h1>Ba-Ingles</h1>
-        <p>This is a delightful dance from Cabugao, Ilocos Sur. Ba-Ingles is derived from the words “baile” and “Ingles” meaning English dance.</p>
-        <h6>Difficulty: Easy</h6>
+        <img src="./resources/home/ba-ingles.svg" alt="ba-ingles" class="animated slideInUp">
+        <div class="animated fadeIn">
+          <h1>Ba-Ingles</h1>
+          <p>This is a delightful dance from Cabugao, Ilocos Sur. Ba-Ingles is derived from the words “baile” and “Ingles” meaning English dance.</p>
+          <h6>Difficulty: Easy</h6>
+        </div>
+
       </div>
       <div class="col-md-5 ml-5 dance-landing">
-        <img src="./resources/home/polka.svg" alt="polka">
-        <h1>Polka sa Nayon</h1>
-        <p>This ballroom polka was popular in the province of Batangas in the Spanish time. It was usually danced during town fiestas and in big social affairs.</p>
-        <h6>Difficulty: Average</h6>
+        <img src="./resources/home/polka.svg" alt="polka" class="animated slideInUp">
+        <div class="animated fadeIn">
+          <h1>Polka sa Nayon</h1>
+          <p>This ballroom polka was popular in the province of Batangas in the Spanish time. It was usually danced during town fiestas and in big social affairs.</p>
+          <h6>Difficulty: Average</h6>
+        </div>
       </div>
     </div>
   </section>
@@ -103,16 +111,16 @@
   $(document).ready(function(){
 
   // hide .navbar first
-  $(".navbar").hide();
+  $("nav").hide();
 
   // fade in .navbar
   $(function () {
     $(window).scroll(function () {
             // set distance user needs to scroll before we fadeIn navbar
-      if ($(this).scrollTop() > 100) {
-        $('.navbar').fadeIn();
+      if ($(this).scrollTop() >= 100) {
+        $('nav').fadeIn();
       } else {
-        $('.navbar').fadeOut();
+        $('nav').fadeOut();
       }
     });
 
