@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+.container {
+  width: 75%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+/* Navigation bar */
+.navbar { position: fixed; top: 0px; left: 0%; width: 100%; z-index: 1000; background: #FFFBE9; padding-top: 2%; padding-bottom: 2%;  }
+
+.navbarContainter {
+  width: 60%;
+  margin: auto;
+}
+
+.nav-link {
+  font-size: 17px;
+  text-align: center;
+  color: #750511;
+}
+
+.nav-link:hover {
+  color: #E8871E;
+}
+
+.nav-dropdown:hover {
+  color: #FFFBE9 !important;
+}
+
+.nav-active {
+  border-bottom: 2px solid #750511;
+}
+
+.dance-dropdown {
+ display: none;
+ margin-left: -35px;
+ padding: 0 30px;
+ z-index: 1;
+ position: absolute;
+ background: #E8871E;
+ border-bottom-left-radius: 9px;
+ border-bottom-right-radius: 9px;
+}
+
+nav ul li:hover > ul {
+  	display: block;
+}
+
+/* landing page */
+.landing-dance p {
+  font-weight: 900;
+  font-size: 28px;
+  color: #750511;
+}
+
+.dance-landing h1 {
+  font-weight: 900;
+  font-size: 48px;
+  color: #750511;
+}
+
+.dance-landing h2 {
+  padding-top: 240px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 16px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 900;
+  font-size: 48px;
+  color: #750511;
+}
+
+.dance-landing h3 {
+  padding-left: 440px;
+  padding-right: 440px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #000000;
+}
+
+.dance-landing h4 {
+  padding-top: 60px;
+  padding-bottom: 240px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #000000;
+}
+
+.dance-landing p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.dance-landing h6 {
+  font-size: 16px;
+  color: #E8871E;
+}
+
+.container-index {
+  width: 90%;
+  margin: auto;
+}
+
+
+.container-bg {
+  position: relative;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 12px;
+  /* background: url('./resources/home/apps.svg') no-repeat;
+  background-position: center;
+  background-size: contain; */
+}
+
+.dances-bg {
+  background: #FFFBE9;
+}
+
+.container-bg .content {
+  position: absolute; /* Position the background text */
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);  color: #f1f1f1; /* Grey text */
+  width: 37%; /* Text Block Width relative to screen */
+}
+
+.container-bg .content h2 {
+  padding-bottom: 16px;
+  font-weight: 900;
+  font-size: 48px;
+  color: #750511;
+}
+
+.container-bg .content h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px; line-height: 24px;
+  color: #000000;
+  margin-bottom: 40px;
+
+}
+
+@media screen and (min-width: 1700px) {
+.container-bg .content h2 { font-size: 60px; margin-bottom: 20px; }
+
+.container-bg .content h3 { font-size: 28px; line-height: 40px; margin-bottom: 60px;  }
+.container-bg { margin-bottom: 200px; }
+.nav-link {
+  font-size: 22px;
+  text-align: center;
+  color: #750511;
+}
+
+.container {
+  margin-top: 10%;
+}
+
+}
+
+.container-bg .content button {
+  padding-top: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #FFFBE9;
+  background-color: #750511;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 180px;
+  margin-right: 180px;
+  width: 150px;
+  border: 0;
+}
+
+/*about page */
+.my-5 {
+  padding: 60px 0;
+}
+
+.col-2 {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.about-container {
+
+}
+
+.about-container h1 {
+  font-weight: 900;
+  font-size: 48px;
+  color: #750511;
+}
+
+.about-container h3 {
+  padding-bottom: 16px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 900;
+  font-size: 30px;
+  color: #750511;
+}
+
+.about-container h4 {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #750511;
+}
+
+.about-container p {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  color: #750511;
+}
+
+/* Dances page */
+.dances {
+  padding: 60px 0;
+}
+
+.dances-landing h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: normal;
+  color: #750511;
+  margin-bottom: 12px;
+}
+
+.dances-landing h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: normal;
+  color: #750511;
+  margin-bottom: 12px;
+}
+
+.dances-landing h3 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: normal;
+  color: #750511;
+  margin-bottom: 12px;
+}
+
+.dances-landing h4 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #750511;
+}
+
+.dances-landing h5 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  color: #E8871E;
+}
+
+.dances-landing h6 {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: normal;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.dances-landing p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.dances-landing ol li {
+  list-style-type: upper-alpha;
+  font-weight: bold;
+}
+
+.dances-landing li > *{
+  font-weight: normal;
+  padding-left: 32px;
+}
+
+
+.dances-vid {
+  height: 638px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 64px;
+}
+
+.emphasized {
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #E8871E;
+}
+
+
+
+.clip-wrap img {
+  display: inline-block;
+}
+
+.dances-prev h2 {
+  color: #E1DABC !important;
+}
+
+.dances-prev h4 {
+  color: #E1DABC !important;
+}
+
+.dances-prev h5 {
+  color: #E1DABC !important;
+}
+
+.dances-prev p {
+  color: #E1DABC !important;
+}
+
+.dances-prev span {
+  color: #E1DABC !important;
+}
+
+.dances-prev li {
+  color: #E1DABC !important;
+}
+
+.dances-step-name {
+  padding-top: 40px;
+  margin-left: 416px;
+}
+
+.dances-step-role {
+  margin-left: 32px;
+}
+
+.dances-step-img {
+  padding-top: 80px;
+}
+
+.dances-step-img img {
+  height: 250px;
+  vertical-align: top;
+}
+
+.dance-together {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dance-together img {
+  margin-left: -80px;
+  margin-right: -80px;
+}
+
+.dances-step-desc {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.dances-step-desc-note {
+  color: #E8871E !important;
+}
+
+/* Polka page*/
+
+/* Ba-Ingles page*/
+.written-title {
+  padding: 30px 0 60px 0;
+}
+
+#baIngles-1, #baIngles-2, #baIngles-3, #baIngles-4, #baIngles-5, #baIngles-6, #baIngles-7, #baIngles-8, #baIngles-9, #polka1, #polka2, #polka3, #polka4, #polka5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#baIngles-2, #baIngles-3, #baIngles-4, #baIngles-5, #baIngles-6, #baIngles-7, #baIngles-8, #baIngles-9, #polka2, #polka3, #polka4, #polka5 {
+  display: none;
+}
+
+/* Image Slider */
+.arrow {
+  padding: 0 60px;
+  cursor: pointer;
+}
+
+/*application page */
+.application-container h1 {
+  font-weight: 900;
+  font-size: 42px;
+  color: #750511;
+  margin-bottom:16px;
+}
+
+.application-container p {
+  font-size: 18px;
+  color: #750511;
+}
+
+
+/*Hover effects*/
+.formation, .music, .costume {
+  padding: 15px 60px 15px 30px;
+}
+.formation:hover, .music:hover, .costume:hover  {
+  background: #E1DABC;
+}
+
+
+.line {
+  width: 100%;
+  height: 5px;
+  background: #750511;
+  margin-top: -90px;
+  margin-bottom: 60px;
+}

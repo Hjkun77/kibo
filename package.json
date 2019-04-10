@@ -1,5 +1,5 @@
 {
-  "name": "kibo",
+  "name": "Kibo",
   "version": "1.0.0",
   "description": "Kyle Francis Chua's Thesis project that aims to keep Philippine cultural dances alive",
   "main": "index.html",
@@ -9,7 +9,6 @@
   "author": "UXSociety",
   "license": "ISC",
   "dependencies": {
-    "animate": "^1.0.0",
-    "bootstrap": "^4.3.1"
+    "live-server": "^1.2.1"
   }
 }

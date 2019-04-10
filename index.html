@@ -9,10 +9,121 @@
   <meta property="og:type" content="website">
   <meta property="og:description" content="Kyle Francis Chua's Thesis project that aims to keep Philippine cultural dances alive">
 
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="animate.css">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+
+  <nav class="navbar navbar-expand-lg py-4 navbar-fixed-top" role="navigation">
+    <div class="navbarContainter">
+      <ul class="flex spaceBetween alignCenter">
+        <li class="nav-item">
+            <a href="/" class="navbar-brand"><img src="./resources/logo/logo.svg" alt="logo"></a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link" style="cursor: pointer">Dances</p>
+          <ul class="dance-dropdown">
+            <li><a href="dances-ba-ingles.html" class="nav-link nav-dropdown">Ba-Ingles</a></li>
+            <li><a href="dances-polka.html" class="nav-link nav-dropdown">Polka</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="adaptation.html" class="nav-link">Adaptation</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="mb-5 pb-5">
+    <div class="container">
+      <div class="row flex justifyCenter">
+        <div class="col-md-6">
+          <img src="./resources/home/kibo.svg" alt="landing-dance" class="animated fadeInUp" style="height: 480px">
+          <div class="animated fadeIn">
+            <strong>verb</strong>
+            <br>
+            <strong>1. to move, to talk, to stir</strong>
+            <p style="margin-top: 16px">Kibo is an online platform that strives to keep Philippine culture alive through basic information, videos, illustrations, and step-by-step guides of its dances.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="landing" class="my-3">
+    <div class="container-index minHeight">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./resources/home/dances.svg" alt="landing-dance" class=" animated slideInLeft">
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5 landing-dance flex alignCenter animated slideInRight">
+          <p>Dance is an important aspect of every civilization, a cultural treasure that embodies the experiences of a community and the stories they lived out.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dances" class="my-3">
+    <div class="container minHeight flex spaceBetween">
+      <div class="col-md-5 mr-5 dance-landing">
+        <a href="dances-ba-ingles.html"><img src="./resources/home/ba-ingles.svg" alt="ba-ingles"></a>
+        <h1>Ba-Ingles</h1>
+        <p>This is a delightful dance from Cabugao, Ilocos Sur. Ba-Ingles is derived from the words “baile” and “Ingles” meaning English dance.</p>
+        <h6>Difficulty: Easy</h6>
+      </div>
+      <div class="col-md-5 ml-5 dance-landing">
+        <a href="dances-polka.html"><img src="./resources/home/polka.svg" alt="polka"></a>
+        <h1>Polka sa Nayon</h1>
+        <p>This ballroom polka was popular in the province of Batangas in the Spanish time. It was usually danced during town fiestas and in big social affairs.</p>
+        <h6>Difficulty: Average</h6>
+      </div>
+    </div>
+  </section>
+
+  <section id="dances" class="my-3">
+    <div class="container-bg">
+      <img src="./resources/home/background-circle.png" alt="Circle" style="width: 100%;">
+      <div class="content">
+        <h2>Adaptation</h2>
+        <h3>Beyond the education of dancers and non-dancers alike about folk dance, another goal of this website is to help people realize how these dances, and the steps learned from them can go beyond the stereotypical perceptions of unrelatability.</h3>
+        <a href="adaptation.html"><button><h4>KIBO</h4></button></a>
+      </div>
+    </div>
+  </section>
+
+
   <script src="script.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script>
+  (function ($) {
+  $(document).ready(function(){
+
+  // hide .navbar first
+  $("nav").hide();
+
+  // fade in .navbar
+  $(function () {
+    $(window).scroll(function () {
+            // set distance user needs to scroll before we fadeIn navbar
+      if ($(this).scrollTop() >= 100) {
+        $('nav').fadeIn();
+      } else {
+        $('nav').fadeOut();
+      }
+    });
+
+
+  });
+
+  });
+  }(jQuery));
+  </script> -->
 </body>
 </html>
